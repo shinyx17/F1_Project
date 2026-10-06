@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Inicio | Escuderías F1{% endblock %}
+
+{% block content %}
+<div class="row align-items-center py-5">
+    <div class="col-lg-7">
+        <h1 class="display-4 fw-bold text-danger text-uppercase">Escuderías de la Fórmula 1</h1>
+        <p class="lead text-light mt-3">
+            Descubre los equipos y constructores que compiten en el campeonato. Revisa sus alineaciones de pilotos oficiales, sedes y países de origen.
+        </p>
+        <div class="mt-4">
+            <a href="{% url 'escuderias_listado' %}" class="btn btn-danger btn-lg fw-bold me-2">Ver Escuderías</a>
+            <a href="{% url 'pilotos_inicio' %}" class="btn btn-outline-light btn-lg">Ir a Pilotos</a>
+        </div>
+    </div>
+    <div class="col-lg-5 text-center mt-4 mt-lg-0">
+        <div class="p-4 bg-secondary bg-opacity-10 border border-secondary rounded shadow-lg">
+            <h3 class="h4 text-uppercase fw-bold text-white mb-3">Mundial de Constructores</h3>
+            <p class="text-secondary small m-0">
+                Las escuderías no solo buscan el título de pilotos, sino también la gloria en el campeonato de constructores, donde cada punto conseguido suma para el desarrollo de sus monoplazas.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

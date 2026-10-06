@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}F1 Hub{% endblock %}</title>
+
+    <!-- Bootstrap CSS Local -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+
+<body class="bg-dark text-light d-flex flex-column min-vh-100">
+
+    <!-- Header con Navbar de Bootstrap -->
+    <header class="bg-black border-bottom border-danger border-3 mb-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+            <a href="{% url 'pilotos_inicio' %}" class="d-flex align-items-center text-decoration-none mb-2 mb-md-0">
+                <img src="{% static 'images/formula1.png' %}" 
+                    alt="F1 Logo" 
+                    height="35" 
+                    onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg';">
+                <span class="h3 fw-bold text-danger ms-2 m-0">Hub</span>
+            </a>
+            <nav class="nav nav-pills">
+                <a class="nav-link text-light me-1" href="{% url 'pilotos_inicio' %}">Pilotos</a>
+                <a class="nav-link text-light me-1" href="{% url 'pilotos_listado' %}">Ver pilotos</a>
+                <a class="nav-link text-light me-1" href="{% url 'escuderias_inicio' %}">Escuderías</a>
+                <a class="nav-link text-light" href="{% url 'escuderias_listado' %}">Ver escuderías</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container flex-grow-1">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer fijado en la parte inferior -->
+    <footer class="bg-black text-center py-3 mt-4 border-top border-secondary">
+        <p class="m-0 text-muted small">F1 Hub - Evaluación Sumativa #1</p>
+    </footer>
+
+    <!-- Bootstrap JS Local -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

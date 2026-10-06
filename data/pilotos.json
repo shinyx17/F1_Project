@@ -1,0 +1,178 @@
+[
+  {
+    "foto": "pilotos/verstappen.jpg",
+    "nombre": "Max Verstappen",
+    "numero": 3,
+    "nacionalidad": "Países Bajos",
+    "escuderia": "Red Bull Racing",
+    "informacion": "Piloto neerlandés y tetracampeón mundial de Fórmula 1."
+  },
+  {
+    "foto": "pilotos/lawson.jpg",
+    "nombre": "Liam Lawson",
+    "numero": 30,
+    "nacionalidad": "Nueva Zelanda",
+    "escuderia": "Racing Bulls",
+    "informacion": "Joven talento neozelandés promovido al equipo principal de Red Bull."
+  },
+  {
+    "foto": "pilotos/norris.jpg",
+    "nombre": "Lando Norris",
+    "numero": 1,
+    "nacionalidad": "Reino Unido",
+    "escuderia": "McLaren",
+    "informacion": "Piloto británico y figura clave en el resurgimiento de McLaren."
+  },
+  {
+    "foto": "pilotos/piastri.jpg",
+    "nombre": "Oscar Piastri",
+    "numero": 81,
+    "nacionalidad": "Australia",
+    "escuderia": "McLaren",
+    "informacion": "Prometedor piloto australiano con múltiples victorias y podios en la F1."
+  },
+  {
+    "foto": "pilotos/leclerc.jpg",
+    "nombre": "Charles Leclerc",
+    "numero": 16,
+    "nacionalidad": "Mónaco",
+    "escuderia": "Scuderia Ferrari",
+    "informacion": "Piloto monegasco, líder y referencia de velocidad a una vuelta en Ferrari."
+  },
+  {
+    "foto": "pilotos/hamilton.jpg",
+    "nombre": "Lewis Hamilton",
+    "numero": 44,
+    "nacionalidad": "Reino Unido",
+    "escuderia": "Scuderia Ferrari",
+    "informacion": "Siete veces campeón del mundo de F1, compitiendo con la mítica escudería Ferrari."
+  },
+  {
+    "foto": "pilotos/russell.jpg",
+    "nombre": "George Russell",
+    "numero": 63,
+    "nacionalidad": "Reino Unido",
+    "escuderia": "Mercedes",
+    "informacion": "Piloto británico, veloz y consistente en la estructura de Mercedes."
+  },
+  {
+    "foto": "pilotos/antonelli.jpg",
+    "nombre": "Kimi Antonelli",
+    "numero": 12,
+    "nacionalidad": "Italia",
+    "escuderia": "Mercedes",
+    "informacion": "Joven estrella italiana que debutó muy joven en el equipo Mercedes."
+  },
+  {
+    "foto": "pilotos/alonso.jpg",
+    "nombre": "Fernando Alonso",
+    "numero": 14,
+    "nacionalidad": "España",
+    "escuderia": "Aston Martin",
+    "informacion": "Bicampeón del mundo español y uno de los pilotos más experimentados de la historia."
+  },
+  {
+    "foto": "pilotos/stroll.jpg",
+    "nombre": "Lance Stroll",
+    "numero": 18,
+    "nacionalidad": "Canadá",
+    "escuderia": "Aston Martin",
+    "informacion": "Piloto canadiense con varios podios en la categoría reina."
+  },
+  {
+    "foto": "pilotos/gasly.jpg",
+    "nombre": "Pierre Gasly",
+    "numero": 10,
+    "nacionalidad": "Francia",
+    "escuderia": "Alpine",
+    "informacion": "Ganador de Gran Premio y pilar fundamental de la escudería francesa Alpine."
+  },
+  {
+    "foto": "pilotos/colapinto.jpg",
+    "nombre": "Franco Colapinto",
+    "numero": 43,
+    "nacionalidad": "Argentina",
+    "escuderia": "Alpine",
+    "informacion": "Piloto argentino promovido desde la academia de jóvenes pilotos de Alpine."
+  },
+  {
+    "foto": "pilotos/albon.jpg",
+    "nombre": "Alexander Albon",
+    "numero": 23,
+    "nacionalidad": "Tailandia",
+    "escuderia": "Williams",
+    "informacion": "Piloto anglo-tailandés, reconocido por su gran ritmo de carrera y liderazgo en Williams."
+  },
+  {
+    "foto": "pilotos/sainz.jpg",
+    "nombre": "Carlos Sainz",
+    "numero": 55,
+    "nacionalidad": "España",
+    "escuderia": "Williams",
+    "informacion": "Multi-ganador de carreras en F1 que aporta su enorme experiencia a Williams."
+  },
+  {
+    "foto": "pilotos/lindblad.jpg",
+    "nombre": "Arvi Lindblad",
+    "numero": 41,
+    "nacionalidad": "Reino Unido",
+    "escuderia": "Racing Bulls",
+    "informacion": "Piloto britanico, ha sido parte del Red Bull Junior Team desde 2021, debutando en Fórmula 1 con Racing Bulls en 2026."
+  },
+  {
+    "foto": "pilotos/hadjar.jpg",
+    "nombre": "Isack Hadjar",
+    "numero": 6,
+    "nacionalidad": "Francia",
+    "escuderia": "Red Bull Racing",
+    "informacion": "Talento franco-argelino ascendido a la F1 tras brillar en categorías inferiores."
+  },
+  {
+    "foto": "pilotos/hulkenberg.jpg",
+    "nombre": "Nico Hülkenberg",
+    "numero": 27,
+    "nacionalidad": "Alemania",
+    "escuderia": "Audi",
+    "informacion": "Veterano piloto alemán destacado por su consistencia y capacidad de adaptación."
+  },
+  {
+    "foto": "pilotos/bortoleto.jpg",
+    "nombre": "Gabriel Bortoleto",
+    "numero": 5,
+    "nacionalidad": "Brasil",
+    "escuderia": "Audi",
+    "informacion": "Campeón de Fórmula 3 y estrella emergente brasileña en la F1."
+  },
+  {
+    "foto": "pilotos/ocon.jpg",
+    "nombre": "Esteban Ocon",
+    "numero": 31,
+    "nacionalidad": "Francia",
+    "escuderia": "Haas",
+    "informacion": "Ganador de Gran Premio de F1 que aporta solidez y experiencia a Haas."
+  },
+  {
+    "foto": "pilotos/bearman.jpg",
+    "nombre": "Oliver Bearman",
+    "numero": 87,
+    "nacionalidad": "Reino Unido",
+    "escuderia": "Haas",
+    "informacion": "Joven promesa británica que destacó desde sus primeras apariciones en F1."
+  },
+  {
+    "foto": "pilotos/perez.jpg",
+    "nombre": "Sergio Pérez",
+    "numero": 11,
+    "nacionalidad": "México",
+    "escuderia": "Cadillac F1 Team",
+    "informacion": "Piloto mexicano con múltiples victorias en F1, parte del proyecto debutante de Cadillac."
+  },
+  {
+    "foto": "pilotos/bottas.jpg",
+    "nombre": "Valtteri Bottas",
+    "numero": 77,
+    "nacionalidad": "Finlandia",
+    "escuderia": "Cadillac F1 Team",
+    "informacion": "Subcampeón del mundo y ganador de Grandes Premios, aportando su experiencia a Cadillac."
+  }
+]

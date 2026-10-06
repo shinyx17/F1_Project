@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Inicio | Pilotos F1{% endblock %}
+
+{% block content %}
+<div class="row align-items-center py-5">
+    <div class="col-lg-7">
+        <h1 class="display-4 fw-bold text-danger text-uppercase">Pilotos de la Fórmula 1</h1>
+        <p class="lead text-light mt-3">
+            Explora la parrilla completa de pilotos para esta temporada. Conoce sus números oficiales, nacionalidades, escuderías actuales y trayectorias.
+        </p>
+        <div class="mt-4">
+            <a href="{% url 'pilotos_listado' %}" class="btn btn-danger btn-lg fw-bold me-2">Ver Todos los Pilotos</a>
+            <a href="{% url 'escuderias_inicio' %}" class="btn btn-outline-light btn-lg">Ir a Escuderías</a>
+        </div>
+    </div>
+    <div class="col-lg-5 text-center mt-4 mt-lg-0">
+        <div class="p-4 bg-secondary bg-opacity-10 border border-secondary rounded shadow-lg">
+            <h3 class="h4 text-uppercase fw-bold text-white mb-3">¿Sabías qué?</h3>
+            <p class="text-secondary small m-0">
+                Esta temporada cuenta con una de las parrillas más renovadas de los últimos años, incluyendo el histórico debut de la escudería Cadillac y la llegada de Audi a la máxima categoría.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

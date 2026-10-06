@@ -1,0 +1,79 @@
+[
+  {
+    "logo": "escuderias/redbull.jpg",
+    "nombre": "Red Bull",
+    "pais": "Austria",
+    "pilotos": ["Max Verstappen", "Isack Hadjar"],
+    "informacion": "Equipo dominante con sede en Milton Keynes, alineando a Verstappen y Hadjar."
+  },
+  {
+    "logo": "escuderias/mclaren.jpg",
+    "nombre": "McLaren",
+    "pais": "Reino Unido",
+    "pilotos": ["Lando Norris", "Oscar Piastri"],
+    "informacion": "Una de las escuderías más históricas y ganadoras en la historia de la Fórmula 1."
+  },
+  {
+    "logo": "escuderias/ferrari.jpg",
+    "nombre": "Scuderia Ferrari",
+    "pais": "Italia",
+    "pilotos": ["Charles Leclerc", "Lewis Hamilton"],
+    "informacion": "La escudería más longeva y laureada, representando la pasión del motor italiano."
+  },
+  {
+    "logo": "escuderias/mercedes.jpg",
+    "nombre": "Mercedes",
+    "pais": "Alemania",
+    "pilotos": ["George Russell", "Kimi Antonelli"],
+    "informacion": "Dominadora de la era híbrida con ocho títulos consecutivos de constructores."
+  },
+  {
+    "logo": "escuderias/astonmartin.jpg",
+    "nombre": "Aston Martin",
+    "pais": "Reino Unido",
+    "pilotos": ["Fernando Alonso", "Lance Stroll"],
+    "informacion": "Marca británica con instalaciones de vanguardia en Silverstone."
+  },
+  {
+    "logo": "escuderias/alpine.jpg",
+    "nombre": "Alpine",
+    "pais": "Francia",
+    "pilotos": ["Pierre Gasly", "Franco Colapinto"],
+    "informacion": "El brazo deportivo del Grupo Renault con sede en Enstone y Viry-Châtillon."
+  },
+  {
+    "logo": "escuderias/williams.jpg",
+    "nombre": "Williams",
+    "pais": "Reino Unido",
+    "pilotos": ["Alexander Albon", "Carlos Sainz"],
+    "informacion": "Histórico equipo independiente británico fundado por Sir Frank Williams."
+  },
+  {
+    "logo": "escuderias/racingbulls.jpg",
+    "nombre": "Racing Bulls",
+    "pais": "Italia",
+    "pilotos": ["Liam Lawson", "Arvid Lindblad"],
+    "informacion": "Equipo con sede en Faenza enfocado en desarrollar a los talentos emergentes del programa Red Bull."
+  },
+  {
+    "logo": "escuderias/audi.jpg",
+    "nombre": "Audi F1 Team",
+    "pais": "Alemania",
+    "pilotos": ["Nico Hülkenberg", "Gabriel Bortoleto"],
+    "informacion": "El fabricante alemán toma las riendas del proyecto de Hinwil con su propia unidad de potencia."
+  },
+  {
+    "logo": "escuderias/haas.jpg",
+    "nombre": "Haas",
+    "pais": "Estados Unidos",
+    "pilotos": ["Esteban Ocon", "Oliver Bearman"],
+    "informacion": "Estructura norteamericana que compite con motores y soporte de Ferrari."
+  },
+  {
+    "logo": "escuderias/cadillac.jpg",
+    "nombre": "Cadillac F1 Team",
+    "pais": "Estados Unidos",
+    "pilotos": ["Sergio Pérez", "Valtteri Bottas"],
+    "informacion": "Nueva estructura estadounidense de General Motors que debuta en la parrilla de la F1."
+  }
+]
