@@ -1,9 +1,12 @@
 F1venv/
 venv/
+.venv/
 __pycache__/
 *.py[cod]
+db.sqlite3
 *.sqlite3
 .env
-.venv/
+.vscode/
 staticfiles/
 media/
+users.txt
