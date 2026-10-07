@@ -113,7 +113,7 @@
   },
   {
     "foto": "pilotos/lindblad.jpg",
-    "nombre": "Arvi Lindblad",
+    "nombre": "Arvid Lindblad",
     "numero": 41,
     "nacionalidad": "Reino Unido",
     "escuderia": "Racing Bulls",
@@ -132,7 +132,7 @@
     "nombre": "Nico Hülkenberg",
     "numero": 27,
     "nacionalidad": "Alemania",
-    "escuderia": "Audi",
+    "escuderia": "Audi F1 Team",
     "informacion": "Veterano piloto alemán destacado por su consistencia y capacidad de adaptación."
   },
   {
@@ -140,7 +140,7 @@
     "nombre": "Gabriel Bortoleto",
     "numero": 5,
     "nacionalidad": "Brasil",
-    "escuderia": "Audi",
+    "escuderia": "Audi F1 Team",
     "informacion": "Campeón de Fórmula 3 y estrella emergente brasileña en la F1."
   },
   {

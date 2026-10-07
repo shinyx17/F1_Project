@@ -4,4 +4,11 @@ from . import views
 urlpatterns = [
     path('', views.inicio, name='pilotos_inicio'),
     path('listado/', views.listado, name='pilotos_listado'),
+
+    path('temporadas/', views.temporadas, name='temporadas'),
+    path(
+        'temporadas/<int:anio>/',
+        views.detalle_temporada,
+        name='detalle_temporada'
+    ),
 ]
