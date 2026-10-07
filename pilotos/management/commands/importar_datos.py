@@ -21,8 +21,8 @@ class Command(BaseCommand):
         )
 
         # Rutas de los archivos JSON
-        ruta_escuderias = settings.BASE_DIR / "data" / "escuderias.json"
-        ruta_pilotos = settings.BASE_DIR / "data" / "pilotos.json"
+        ruta_escuderias = settings.BASE_DIR / "old_data" / "escuderias.json"
+        ruta_pilotos = settings.BASE_DIR / "old_data" / "pilotos.json"
 
         # -------------------------
         # IMPORTAR ESCUDERÍAS
