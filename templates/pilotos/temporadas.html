@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %}Temporadas | F1 Hub{% endblock %}
+
+{% block content %}
+
+<h2 class="mb-4 text-uppercase fw-bold border-bottom pb-2">
+    Temporadas de Fórmula 1
+</h2>
+
+<p class="text-secondary mb-4">
+    Explora las distintas temporadas registradas en F1 Hub.
+</p>
+
+<!-- Selector de temporada -->
+<div class="mb-4">
+    <label for="selector-temporada" class="form-label fw-semibold">
+        Seleccionar temporada
+    </label>
+
+    <div class="d-flex gap-2">
+        <select id="selector-temporada"
+                class="form-select bg-dark text-white border-secondary">
+
+            <option value="">Selecciona una temporada...</option>
+
+            {% for temporada in temporadas %}
+                <option value="{% url 'detalle_temporada' temporada.anio %}">
+                    {{ temporada.anio }}
+                </option>
+            {% endfor %}
+
+        </select>
+
+        <button type="button"
+                class="btn btn-danger"
+                onclick="irTemporada()">
+            Ver temporada
+        </button>
+    </div>
+</div>
+
+<!-- Tarjetas de temporadas -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+    {% for temporada in temporadas %}
+
+    <div class="col">
+        <div class="card h-100 bg-secondary bg-opacity-10 border-secondary text-white shadow-sm">
+
+            <div class="card-body text-center d-flex flex-column">
+
+                <h3 class="display-4 fw-bold text-danger">
+                    {{ temporada.anio }}
+                </h3>
+
+                <p class="text-secondary">
+                    {{ temporada.descripcion }}
+                </p>
+
+                <div class="mt-auto">
+                    <a href="{% url 'detalle_temporada' temporada.anio %}"
+                        class="btn btn-danger fw-semibold">
+                        Ver temporada
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {% empty %}
+
+    <div class="col-12">
+        <p class="text-center text-secondary">
+            No hay temporadas registradas.
+        </p>
+    </div>
+
+    {% endfor %}
+
+</div>
+
+<script>
+    function irTemporada() {
+        const selector = document.getElementById("selector-temporada");
+
+        if (selector.value) {
+            window.location.href = selector.value;
+        }
+    }
+</script>
+
+{% endblock %}

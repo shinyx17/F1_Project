@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from .models import ParticipacionPiloto, Temporada
 
@@ -40,7 +40,7 @@ def temporadas(request):
 
 
 def detalle_temporada(request, anio):
-    temporada = Temporada.objects.get(anio=anio)
+    temporada = get_object_or_404(Temporada, anio=anio)
 
     participaciones = ParticipacionPiloto.objects.select_related(
         "piloto",
