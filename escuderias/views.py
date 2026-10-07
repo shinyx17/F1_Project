@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from django.db.models import Q
 from .models import Escuderia
 
 
@@ -12,6 +12,15 @@ def inicio(request):
 def listado(request):
     escuderias = Escuderia.objects.all()
 
+    busqueda = request.GET.get("q", "").strip()
+
+    if busqueda:
+        escuderias = escuderias.filter(
+            Q(nombre__icontains=busqueda) |
+            Q(pais__icontains=busqueda)
+        )
+
     return render(request, 'escuderias/listado.html', {
-        'escuderias': escuderias
+        'escuderias': escuderias,
+        'busqueda': busqueda
     })

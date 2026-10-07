@@ -19,11 +19,19 @@ def inicio(request):
 def listado(request):
     participaciones = obtener_participaciones()
 
+    busqueda = request.GET.get("q", "").strip()
+
+    if busqueda:
+        participaciones = participaciones.filter(
+            piloto__nombre__icontains=busqueda
+        )
+
     return render(
         request,
         "pilotos/listado.html",
         {
-            "participaciones": participaciones
+            "participaciones": participaciones,
+            "busqueda": busqueda
         }
     )
 

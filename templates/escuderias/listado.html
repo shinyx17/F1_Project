@@ -5,6 +5,43 @@
 
 {% block content %}
 <h2 class="mb-4 text-uppercase fw-bold border-bottom pb-2">Escuderías</h2>
+<form method="GET" class="mb-4">
+    <div class="input-group">
+        <input
+            type="text"
+            name="q"
+            class="form-control bg-dark text-white border-secondary"
+            placeholder="Buscar escudería o país..."
+            value="{{ busqueda }}"
+        >
+
+        <button class="btn btn-danger" type="submit">
+            Buscar
+        </button>
+
+        {% if busqueda %}
+            <a href="{% url 'escuderias_listado' %}" class="btn btn-outline-light">
+                Limpiar
+            </a>
+        {% endif %}
+    </div>
+</form>
+
+{% if user.is_staff %}
+<div class="d-flex gap-2 mb-4">
+
+    <a href="{% url 'admin:escuderias_escuderia_add' %}"
+        class="btn btn-success">
+        + Agregar escudería
+    </a>
+
+    <a href="{% url 'admin:escuderias_escuderia_changelist' %}"
+        class="btn btn-outline-light">
+        Administrar escuderías
+    </a>
+
+</div>
+{% endif %}
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
     {% for escuderia in escuderias %}
@@ -21,16 +58,47 @@
                 <h3 class="h4 card-title fw-bold text-danger">{{ escuderia.nombre }}</h3>
                 <p class="card-text text-muted mb-2"><strong>País:</strong> {{ escuderia.pais }}</p>
 
-                <h4 class="h6 mt-2 fw-bold text-uppercase text-light">Pilotos</h4>
-                <ul class="list-group list-group-flush mb-3">
-                    {% for piloto in escuderia.pilotos %}
-                        <li class="list-group-item bg-transparent text-light border-secondary-subtle px-0 py-1">
-                            🏎️ {{ piloto }}
-                        </li>
-                    {% endfor %}
-                </ul>
+<h4 class="h6 mt-2 fw-bold text-uppercase text-light">
+    Pilotos
+</h4>
+
+<ul class="list-group list-group-flush mb-3">
+
+    {% for participacion in escuderia.participaciones.all %}
+
+        <li class="list-group-item bg-transparent text-light border-secondary-subtle px-0 py-1">
+            🏎️ {{ participacion.piloto.nombre }}
+            <span class="text-secondary">
+                #{{ participacion.numero }}
+            </span>
+        </li>
+
+    {% empty %}
+
+        <li class="list-group-item bg-transparent text-secondary border-secondary-subtle px-0 py-1">
+            Sin pilotos registrados
+        </li>
+
+    {% endfor %}
+
+</ul>
 
                 <p class="card-text small text-secondary mt-auto">{{ escuderia.informacion }}</p>
+                {% if user.is_staff %}
+<div class="d-flex gap-2 justify-content-center mt-3">
+
+    <a href="{% url 'admin:escuderias_escuderia_change' escuderia.id %}"
+        class="btn btn-warning btn-sm">
+        Modificar
+    </a>
+
+    <a href="{% url 'admin:escuderias_escuderia_delete' escuderia.id %}"
+        class="btn btn-danger btn-sm">
+        Eliminar
+    </a>
+
+</div>
+{% endif %}
             </div>
         </div>
     </div>
